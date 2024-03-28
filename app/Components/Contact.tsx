@@ -11,15 +11,28 @@ const Contact = () => {
   const sendEmail = (e: any) => {
     e.preventDefault(); // Prevent the form from submitting in the traditional way
 
-    emailjs.sendForm('service_zhhuwpn', 'template_idfp4mj', e.target, 'ZKpasy-49q3Pgc5JA') // Replace 'user_XXXXXXXXXXXXX' with your EmailJS user ID
+    // Get form data
+    const fromName = e.target.from_name.value.trim();
+    const fromEmail = e.target.from_email.value.trim();
+    const message = e.target.message.value.trim();
+
+    // Check if any field is empty
+    if (!fromName || !fromEmail || !message) {
+        alert('Please fill out all fields.');
+        return; // Stop the function if any field is empty
+    }
+
+    // Proceed with sending the email if all fields are filled
+    emailjs.sendForm('service_zhhuwpn', 'template_idfp4mj', e.target, 'ZKpasy-49q3Pgc5JA')
     .then((result) => {
-      setEmailStatus({ sent: true, failed: false, visible: true });
-      setTimeout(() => setEmailStatus((prevState) => ({ ...prevState, visible: false })), 3000);
+        setEmailStatus({ sent: true, failed: false, visible: true });
+        setTimeout(() => setEmailStatus((prevState) => ({ ...prevState, visible: false })), 3000);
     }, (error) => {
-      setEmailStatus({ sent: false, failed: true, visible: true });
-      setTimeout(() => setEmailStatus((prevState) => ({ ...prevState, visible: false })), 3000);
+        setEmailStatus({ sent: false, failed: true, visible: true });
+        setTimeout(() => setEmailStatus((prevState) => ({ ...prevState, visible: false })), 3000);
     });
 };
+
   return (
     <div id='contact' className="target-section bg-blue-900 text-white py-10 px-4">
       <div className="container mx-auto">
