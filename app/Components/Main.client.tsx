@@ -27,7 +27,7 @@ const Main = () => {
     }, 3000);
 
     // Your smooth scroll effect
-    const handleSmoothScroll = (e) => {
+    const handleSmoothScroll = (e: any) => {
       if (e.target.matches('.scroll-target')) {
         e.preventDefault();
         const targetId = e.target.getAttribute('href');

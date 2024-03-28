@@ -26,7 +26,8 @@ const Footer = () => {
             {/* Add more social media icons here */}
           </div>
         </div>
-        <p className="text-sm">&copy;2024 Mohammad Mujahid. All rights reserved.</p>
+        <p className="text-sm">&copy;2024 Mohammad Mujahid. All rights reserved.&apos;</p>
+
       </div>
     </footer>
   );

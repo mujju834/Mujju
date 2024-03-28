@@ -8,7 +8,7 @@ const Contact = () => {
   const [emailSent, setEmailSent] = useState(false);
   const [sendingFailed, setSendingFailed] = useState(false);
 
-  const sendEmail = (e) => {
+  const sendEmail = (e: any) => {
     e.preventDefault(); // Prevent the form from submitting in the traditional way
 
     emailjs.sendForm('service_zhhuwpn', 'template_idfp4mj', e.target, 'ZKpasy-49q3Pgc5JA') // Replace 'user_XXXXXXXXXXXXX' with your EmailJS user ID
