@@ -56,7 +56,7 @@ const Main = () => {
   return (
     <>
       <Head>
-        <title>Mohammad Mujahid's Portfolio</title>
+        <title>Mohammad Mujahid&apos;s Portfolio</title>
         <meta name="description" content="Mohammad Mujahid - A Content Creator" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -108,6 +108,7 @@ const Main = () => {
                 {currentTitle}
               </p>
               <p className="mt-4 max-w-2xl">
+                
               As a full-stack maestro, I blend front-end elegance with robust back-end functionalities, creating cohesive and dynamic applications. My blockchain expertise fortifies platforms with decentralization, infusing trust and security into every transaction. In the DevOps arena, I streamline workflows, ensuring seamless integration and deployment that accelerate the software development lifecycle. My ventures in cloud computing architect scalable solutions, harnessing distributed power for peak performance. Through a deep understanding of networking, I construct infrastructures that are both resilient and efficient. Each layer of technology is a strategic move in my quest to redefine the digital landscape of businesses.
               </p>
      
