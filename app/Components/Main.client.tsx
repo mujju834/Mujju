@@ -102,7 +102,7 @@ const Main = () => {
 </div>
 
 
-            <div id="about-section" className="scroll-section text-center md:text-left md:pl-6">
+<div id="about-section" className="scroll-section text-center md:text-left md:pl-6 -mt-40">
               <h1 className="text-6xl font-bold">Hi, I am <br/> Mohammad Mujahid</h1>
               <p className={`text-purple-500 text-3xl font-light mt-4 ${fade ? 'fade-enter-active' : 'fade-exit-active'}`}>
                 {currentTitle}
