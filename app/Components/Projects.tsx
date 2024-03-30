@@ -25,7 +25,7 @@ const projectsData = [
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-8">Projects</h2>
           <p className="text-center mb-12">
-            I have worked on Frontend projects. Here are some of my projects.
+            I have worked on this Full-Stack projects. Here are some of my projects.
           </p>
           <div className="grid md:grid-cols-3 gap-8">
             {projectsData.map((project, index) => (
