@@ -10,7 +10,7 @@ const projectsData = [
     },
     {
       name: 'Child-Care Management',
-      description: 'Created a child care management website which can track the students mark their attendance has parent management functionalities, teacher management functionalities, facitliy admin functinalities, system admin functionalities please have a look into it',
+      description: 'Created a child care management website which has many functionalites vist livecode to understand my project',
       tech: ['React Js', 'Redux', 'SCSS', 'Tailwind CSS', 'Nodejs', 'Expressjs', 'Mongodb'],
       image: '/images/pr-2.png',
       liveUrl: 'https://main--childd.netlify.app',
