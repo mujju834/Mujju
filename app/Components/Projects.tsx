@@ -8,6 +8,14 @@ const projectsData = [
       liveUrl: 'https://starflixx.com/home',
       codeUrl: '#',
     },
+    {
+      name: 'Child-Care Management',
+      description: 'Created a child care management website which can track the students mark their attendance has parent management functionalities, teacher management functionalities, facitliy admin functinalities, system admin functionalities please have a look into it',
+      tech: ['React Js', 'Redux', 'SCSS', 'Tailwind CSS', 'Nodejs', 'Expressjs', 'Mongodb'],
+      image: '/images/pr-2.png',
+      liveUrl: 'https://main--childd.netlify.app',
+      codeUrl: 'https://github.com/mujju834/FullstackMern',
+    }
     // ... Add other projects here
   ];
   
