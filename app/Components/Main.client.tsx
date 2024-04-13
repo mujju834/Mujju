@@ -59,7 +59,7 @@ const Main = () => {
   return (
     <>
       <Head>
-        <title>Mohammad Mujahid's Portfolio</title>
+        <title>Mohammad Mujahid&apos;s Portfolio</title>
         <meta name="description" content="Mohammad Mujahid - A Content Creator" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
