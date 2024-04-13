@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { useState, useEffect, useMemo } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBriefcase,faBars,faTimes  } from '@fortawesome/free-solid-svg-icons';
+import { faBriefcase,faBars } from '@fortawesome/free-solid-svg-icons';
 
 
 const Main = () => {
@@ -11,7 +11,6 @@ const Main = () => {
   const [currentTitle, setCurrentTitle] = useState(titles[0]);
   const [fade, setFade] = useState(true);
   const [isOpen, setIsOpen] = useState(false);
-  const closeMenu = () => setIsOpen(false);
   
 
   useEffect(() => {
@@ -63,59 +62,58 @@ const Main = () => {
         <meta name="description" content="Mohammad Mujahid - A Content Creator" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <header className="fixed top-0 w-full z-30 bg-gray-900 text-white p-4 md:p-8">
-        <div className="container mx-auto flex justify-between items-center">
-          <div className="flex items-center space-x-2">
-            <FontAwesomeIcon icon={faBriefcase} className="text-white" />
-            <a href="#about-section" className="text-white font-bold">Portfolio</a>
-          </div>
-          <button onClick={() => setIsOpen(!isOpen)} className="md:hidden text-white">
-            <FontAwesomeIcon icon={faBars} />
-          </button>
-          <nav className={`${isOpen ? 'block' : 'hidden'} md:block`}>
-            <ul className="flex flex-col md:flex-row justify-end space-x-0 md:space-x-3">
-              <li>
-                <a href="#about-section" className="block px-4 py-2 text-white hover:text-gray-300">About</a>
-              </li>
-              <li>
-                <a href="#skills" className="block px-4 py-2 text-white hover:text-gray-300">Skills</a>
-              </li>
-              <li>
-                <a href="#projects" className="block px-4 py-2 text-white hover:text-gray-300">Projects</a>
-              </li>
-              <li>
-                <a href="#education" className="block px-4 py-2 text-white hover:text-gray-300">Education</a>
-              </li>
-              <li>
-                <a href="#contact" className="block px-4 py-2 text-white hover:text-gray-300">Contact</a>
-              </li>
-            </ul>
-          </nav>
-          <div className="hidden md:block">
-            <a href="https://github.com/mujju834" className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded">GitHub Profile</a>
-          </div>
-        </div>
-      </header>
+
+      <header className="fixed top-0 w-full z-30 bg-gray-900 text-white p-8">
+  <div className="container mx-auto flex justify-between items-center">
+    <div className="flex items-center space-x-2">
+      <FontAwesomeIcon icon={faBriefcase} className="text-white" />
+      <a href="#about-section" className="text-white font-bold">Portfolio</a>
+    </div>
+    <nav className="flex-4">
+      <ul className="flex justify-end space-x-2 md:space-x-3"> {/* Reduced space-x-* for tighter spacing */}
+        <li>
+        <a href="#about-section" className="scroll-target nav-item text-white hover:text-gray-300 px-1 md:px-4 relative">
+        About
+      </a>
+        </li>
+        <li><a href="#skills" className="scroll-target nav-item text-white hover:text-gray-300 px-1 md:px-4 relative">Skills</a></li>
+        <li><a href="#projects" className="scroll-target nav-item text-white hover:text-gray-300 px-1 md:px-4 relative">Projects</a></li>
+        <li><a href="#education" className="scroll-target nav-item text-white hover:text-gray-300 px-1 md:px-4 relative">Education</a></li>
+        <li><a href="#contact" className="scroll-target nav-item text-white hover:text-gray-300 px-1 md:px-4 relative">Contact</a></li>
+      </ul>
+    </nav>
+    <div>
+      <a href="https://github.com/mujju834" className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded">GitHub Profile</a>
+    </div>
+  </div>
+</header>
+
+
+
       <main className="pt-24 bg-gray-900 text-white">
         <section className="flex items-center justify-center p-20">
           <div className="flex flex-col md:flex-row items-center">
-            <div className="relative w-96 h-96 rounded-full overflow-hidden border-4 border-purple-600">
-              <Image
-                src="/images/My-img.png"
-                alt="Profile Picture"
-                layout="fill"
-                objectFit="cover"
-                objectPosition="68% center"
-              />
-            </div>
-            <div id="about-section" className="scroll-section text-center md:text-left md:pl-6 -mt-40">
+          <div className="relative w-96 h-96 rounded-full overflow-hidden border-4 border-purple-600">
+  <Image
+    src="/images/My-img.png" 
+    alt="Profile Picture"
+    layout="fill"
+    objectFit="cover"
+    objectPosition="68% center"
+  />
+</div>
+
+
+<div id="about-section" className="scroll-section text-center md:text-left md:pl-6 -mt-40">
               <h1 className="text-6xl font-bold">Hi, I am <br/> Mohammad Mujahid</h1>
               <p className={`text-purple-500 text-3xl font-light mt-4 ${fade ? 'fade-enter-active' : 'fade-exit-active'}`}>
                 {currentTitle}
               </p>
               <p className="mt-4 max-w-2xl">
-                As a full-stack maestro, I blend front-end elegance with robust back-end functionalities, creating cohesive and dynamic applications. My blockchain expertise fortifies platforms with decentralization, infusing trust and security into every transaction. In the DevOps arena, I streamline workflows, ensuring seamless integration and deployment that accelerate the software development lifecycle. My ventures in cloud computing architect scalable solutions, harnessing distributed power for peak performance. Through a deep understanding of networking, I construct infrastructures that are both resilient and efficient. Each layer of technology is a strategic move in my quest to redefine the digital landscape of businesses.
+                
+              As a full-stack maestro, I blend front-end elegance with robust back-end functionalities, creating cohesive and dynamic applications. My blockchain expertise fortifies platforms with decentralization, infusing trust and security into every transaction. In the DevOps arena, I streamline workflows, ensuring seamless integration and deployment that accelerate the software development lifecycle. My ventures in cloud computing architect scalable solutions, harnessing distributed power for peak performance. Through a deep understanding of networking, I construct infrastructures that are both resilient and efficient. Each layer of technology is a strategic move in my quest to redefine the digital landscape of businesses.
               </p>
+     
               <a href="/Resume/Mujju-Resume.pdf" download="Mohammad-Mujahid_Resume.pdf" className="mt-8 inline-block bg-purple-500 hover:bg-purple-600 text-white font-bold py-3 px-6 rounded-full transition-colors duration-300">My Resume</a>
             </div>
           </div>
