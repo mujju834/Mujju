@@ -15,6 +15,14 @@ const projectsData = [
       image: '/images/pr-2.png',
       liveUrl: 'https://main--childd.netlify.app',
       codeUrl: 'https://github.com/mujju834/FullstackMern',
+    },
+    {
+      name: 'Pet-Care Management',
+      description: 'Created a Pet-Care Management website which has many functionalites vist viewcode to understand my project',
+      tech: ['React Js', 'Redux', 'Tailwind CSS', 'Nodejs', 'Expressjs', 'Mongodb'],
+      image: '/images/Petcare.png',
+      liveUrl: 'https://se-petcare.netlify.app',
+      codeUrl: 'https://github.com/mujju834/Petcare-frontend',
     }
     // ... Add other projects here
   ];
