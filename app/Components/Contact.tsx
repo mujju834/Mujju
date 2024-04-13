@@ -76,7 +76,7 @@ const Contact = () => {
 
       <style jsx>{`
         #contact {
-          scroll-margin-top: 50px; /* Adjust this value as needed */
+          scroll-margin-top: 50px; /* Adjust  */
         }
         @keyframes fadeIn {
           from { opacity: 0; transform: translateY(-20px); }
