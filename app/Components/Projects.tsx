@@ -1,13 +1,6 @@
 // Projects.tsx
 const projectsData = [
-    {
-      name: 'StarFlix',
-      description: 'An Entertainment Information platform for TV Shows and Movies. Users can check...',
-      tech: ['React Js', 'Redux', 'SCSS', 'Tailwind CSS'],
-      image: '/images/pr-1.png',
-      liveUrl: 'https://starflixx.com/home',
-      codeUrl: '#',
-    },
+   
     {
       name: 'Child-Care Management',
       description: 'Created a child care management website which has many functionalites vist viewcode to understand my project',
