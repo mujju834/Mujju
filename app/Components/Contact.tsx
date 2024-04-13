@@ -23,7 +23,7 @@ const Contact = () => {
     }
 
     // Proceed with sending the email if all fields are filled
-    emailjs.sendForm('service_zhhuwpn', 'template_idfp4mj', e.target, 'ZKpasy-49q3Pgc5JA')
+    emailjs.sendForm('service_67v4rsb', 'template_idfp4mj', e.target, 'rVUOOV9shGVywdXiA')
     .then((result) => {
         setEmailStatus({ sent: true, failed: false, visible: true });
         setTimeout(() => setEmailStatus((prevState) => ({ ...prevState, visible: false })), 3000);
