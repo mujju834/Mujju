@@ -16,6 +16,14 @@ const projectsData = [
       image: '/images/Petcare.png',
       liveUrl: 'https://se-petcare.netlify.app',
       codeUrl: 'https://github.com/mujju834/Petcare-frontend',
+    },
+    {
+      name: 'MUJJUS-GPT',
+      description:'MUJJUS-GPT is an innovative, personalized ChatGPT-like platform tailored for streamlined interactions and functionality. Designed using React JS, the front-end delivers a responsive and intuitive user interface, enabling users to engage effortlessly with the system',
+      tech: ['React Js',  'CSS', 'Nodejs', 'Expressjs', 'API'],
+      image: '/images/GPT.png',
+      liveUrl: 'https://gpt-frontend-wtr1.onrender.com/',
+      codeUrl: 'https://github.com/mujju834/gpt-frontend.git',
     }
     // ... Add other projects here
   ];
