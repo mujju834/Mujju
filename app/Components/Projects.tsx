@@ -24,6 +24,14 @@ const projectsData = [
       image: '/images/GPT.png',
       liveUrl: 'https://gpt-frontend-wtr1.onrender.com/',
       codeUrl: 'https://github.com/mujju834/gpt-frontend.git',
+    },
+    {
+      name: 'MUJJUS-COFFEE BUSINESS',
+      description:'MUJJUS is a web application designed for coffee shops, aiming to streamline operations through a series of interconnected services that manage different aspects of the business. The application utilizes microservices architecture to ensure scalability and maintainability, with each service handling a specific part of the business logic.',
+      tech: ['React Js',  'CSS', 'Nodejs', 'Expressjs', 'API', 'gRPC', 'Microservices'],
+      image: '/images/MUJJUS-COFFEE.png',
+      liveUrl: 'https://coffee-web-vjew.onrender.com/',
+      codeUrl: 'https://github.com/mujju834/coffee-web',
     }
     // ... Add other projects here
   ];
