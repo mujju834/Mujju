@@ -5,7 +5,7 @@ const projectsData = [
     name: 'Mujjus Ecommerce store',
     description: 'At MERN Store, we pride ourselves on offering an exceptional online shopping experience, bringing you a wide range of high-quality products right to your doorstep. Whether youre looking for the latest electronics, trendy fashion, or everyday essentials, we have something for everyone.',
     tech: ['React Js', 'Redux','Redux-thunk', 'SCSS', 'Tailwind CSS', 'Nodejs', 'Expressjs', 'Mongodb'],
-    image: '/images/Ecommerce.png',
+    image: '/images/Ecommerce1.png',
     liveUrl: 'https://mujju-ecommerce-front.onrender.com/',
     codeUrl: 'https://github.com/mujju834/MUJJU-ECOMMERCE.git',
   },
