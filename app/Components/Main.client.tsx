@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { useState, useEffect, useMemo } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBriefcase,faBars } from '@fortawesome/free-solid-svg-icons';
+import { faBriefcase,faBars,faTimes } from '@fortawesome/free-solid-svg-icons';
 
 
 const Main = () => {
@@ -12,6 +12,9 @@ const Main = () => {
   const [fade, setFade] = useState(true);
   const [isOpen, setIsOpen] = useState(false);
   
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+};
 
   useEffect(() => {
     // Your title cycle effect
@@ -63,14 +66,16 @@ const Main = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header className="fixed top-0 w-full z-30 bg-gray-900 text-white p-8">
+
+ {/* previous navbar */}
+      {/* <header className="fixed top-0 w-full z-30 bg-gray-900 text-white p-8">
   <div className="container mx-auto flex justify-between items-center">
     <div className="flex items-center space-x-2">
       <FontAwesomeIcon icon={faBriefcase} className="text-white" />
       <a href="#about-section" className="text-white font-bold">Portfolio</a>
     </div>
     <nav className="flex-4">
-      <ul className="flex justify-end space-x-2 md:space-x-3"> {/* Reduced space-x-* for tighter spacing */}
+      <ul className="flex justify-end space-x-2 md:space-x-3"> 
         <li>
         <a href="#about-section" className="scroll-target nav-item text-white hover:text-gray-300 px-1 md:px-4 relative">
         About
@@ -86,8 +91,39 @@ const Main = () => {
       <a href="https://github.com/mujju834" className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded">GitHub Profile</a>
     </div>
   </div>
-</header>
+</header> */}
 
+{/* new navbar with mobile response */}
+ <header className="fixed top-0 w-full z-30 bg-gray-900 text-white p-8">
+            <div className="container mx-auto flex justify-between items-center">
+                <div className="flex items-center space-x-2">
+                    <FontAwesomeIcon icon={faBriefcase} className="text-white" />
+                    <a href="#about-section" className="text-white font-bold">Portfolio</a>
+                </div>
+
+                {/* Hamburger Icon */}
+                <div className="md:hidden">
+                    <button onClick={toggleMenu} className="text-white focus:outline-none">
+                        <FontAwesomeIcon icon={isOpen ? faTimes : faBars} />
+                    </button>
+                </div>
+
+                {/* Navigation */}
+                <nav className={`${isOpen ? 'block' : 'hidden'} md:block`}>
+                    <ul className="flex flex-col md:flex-row justify-end space-x-0 md:space-x-3 items-center md:items-center">
+                        <li><a href="#about-section" className="scroll-target nav-item text-white hover:text-gray-300 px-1 md:px-4 relative">About</a></li>
+                        <li><a href="#skills" className="scroll-target nav-item text-white hover:text-gray-300 px-1 md:px-4 relative">Skills</a></li>
+                        <li><a href="#projects" className="scroll-target nav-item text-white hover:text-gray-300 px-1 md:px-4 relative">Projects</a></li>
+                        <li><a href="#education" className="scroll-target nav-item text-white hover:text-gray-300 px-1 md:px-4 relative">Education</a></li>
+                        <li><a href="#contact" className="scroll-target nav-item text-white hover:text-gray-300 px-1 md:px-4 relative">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div className="hidden md:block">
+                    <a href="https://github.com/mujju834" className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded">GitHub Profile</a>
+                </div>
+            </div>
+        </header>
 
 
       <main className="pt-24 bg-gray-900 text-white">
