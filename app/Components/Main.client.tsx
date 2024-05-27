@@ -7,20 +7,18 @@ import { faBriefcase,faBars,faTimes } from '@fortawesome/free-solid-svg-icons';
 
 const Main = () => {
   const titles = useMemo(() => ['Blockchain Developer', 'Full Stack Maestro', 'Cloud Architect', 'DevOps Specialist', 'Networking Enthusiast'], []);
-
   const [currentTitle, setCurrentTitle] = useState(titles[0]);
   const [fade, setFade] = useState(true);
   const [isOpen, setIsOpen] = useState(false);
-  
+
   const toggleMenu = () => {
     setIsOpen(!isOpen);
-};
+  };
 
   useEffect(() => {
-    // Your title cycle effect
+    // Title cycle effect
     const cycleTitles = setInterval(() => {
       setFade(false);
-
       setTimeout(() => {
         setCurrentTitle((prevTitle) => {
           const currentIndex = titles.indexOf(prevTitle);
@@ -31,28 +29,38 @@ const Main = () => {
       }, 500);
     }, 3000);
 
-    // Your smooth scroll effect
-    const handleSmoothScroll = (e: any) => {
-      if (e.target.matches('.scroll-target')) {
-        e.preventDefault();
-        const targetId = e.target.getAttribute('href');
-        const targetElement = document.querySelector(targetId);
-        
-        targetElement?.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start'
-        });
+    // Scroll to about-section on initial load
+    const targetElement = document.getElementById('about-section');
+    if (targetElement) {
+      window.scrollTo({
+        top: targetElement.offsetTop,
+        behavior: 'smooth'
+      });
+    }
+
+    // Smooth scroll effect for navigation
+    const handleSmoothScroll = (event :any) => {
+      if (event.target.matches('.scroll-target')) {
+        event.preventDefault();
+        const targetId = event.target.getAttribute('href');
+        const targetSection = document.querySelector(targetId);
+        if (targetSection) {
+          targetSection.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
       }
     };
 
     document.addEventListener('click', handleSmoothScroll);
 
-    // Clear intervals and event listeners on cleanup
+    // Clean up
     return () => {
       clearInterval(cycleTitles);
       document.removeEventListener('click', handleSmoothScroll);
     };
-  }, [titles]);
+  }, [titles]); // Depend on titles to prevent multiple intervals
 
 
 
@@ -140,7 +148,7 @@ const Main = () => {
 </div>
 
 
-<div id="about-section" className="scroll-section text-center md:text-left md:pl-6 -mt-40">
+<div id="about-section" className="scroll-section text-center md:text-left md:pl-6 -mt-20">
               <h1 className="text-6xl font-bold">Hi, I am <br/> Mohammad Mujahid</h1>
               <p className={`text-purple-500 text-3xl font-light mt-4 ${fade ? 'fade-enter-active' : 'fade-exit-active'}`}>
                 {currentTitle}
