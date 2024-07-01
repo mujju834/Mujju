@@ -98,6 +98,66 @@ const Skills = () => {
 
 
         
+        {/* blockchain */}
+        <div className="skills-container">
+          <h3 className="text-2xl font-bold mb-6">BlockChain</h3>
+          <div className="grid grid-cols-3 gap-4">
+
+          <div className="skill-icon">
+              <FontAwesomeIcon icon={faBitcoin} size="4x" style={{ color: '#F7931A' }} />
+              <p>Bitcoin</p>
+            </div> 
+
+            <div className="skill-icon">
+              <FontAwesomeIcon icon={faEthereum} size="4x" style={{ color: '#3C3C3D' }} />
+              <p>Ethereum</p>
+            </div> 
+            
+          <div className="skill-icon">
+              <img src="/icons/solidity.png" alt="TypeScript" style={{ width: '64px', height: '64px' }} />
+              <p>Solidity</p>
+            </div>
+
+            <div className="skill-icon">
+              <img src="/icons/truffle.png" alt="TypeScript" style={{ width: '64px', height: '64px' }} />
+              <p>Truffle</p>
+            </div>
+
+            <div className="skill-icon">
+              <img src="/icons/hardhat.png" alt="TypeScript" style={{ width: '64px', height: '64px' }} />
+              <p>Hardhat</p>
+            </div>
+
+            <div className="skill-icon">
+              <img src="/icons/ganache.png" alt="TypeScript" style={{ width: '64px', height: '64px' }} />
+              <p>Ganache</p>
+            </div>
+
+            <div className="skill-icon">
+              <img src="/icons/metamask.png" alt="TypeScript" style={{ width: '64px', height: '64px' }} />
+              <p>MetaMask</p>
+            </div>
+            <div className="skill-icon">
+              <img src="/icons/web3.png" alt="TypeScript" style={{ width: '64px', height: '64px' }} />
+              <p>Web3.js</p>
+            </div>
+             
+            <div className="skill-icon">
+              <img src="/icons/IPFS.png" alt="TypeScript" style={{ width: '64px', height: '64px' }} />
+              <p>IPFS</p>
+            </div>
+
+            <div className="skill-icon">
+              <img src="/icons/gitactions.png" alt="TypeScript" style={{ width: '64px', height: '64px' }} />
+              <p>GitActions</p>
+            </div>
+    
+           
+            
+
+            
+          </div>
+        </div>
 
 
       </div>

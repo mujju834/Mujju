@@ -7,6 +7,7 @@ import Projects from './Components/Projects';
 import Education from './Components/Education';
 import Contact from './Components/Contact';
 import Footer from './Components/Footer';
+import Experience from './Components/experience';
 
 const MainClientComponent = dynamic(() => import('./Components/Main.client'), {
   suspense: true,
@@ -19,6 +20,7 @@ export default function Home() {
         <MainClientComponent />
         <Skills />
         <Skills2 />
+        <Experience />
         <Projects />
         <Education />
         <Contact />

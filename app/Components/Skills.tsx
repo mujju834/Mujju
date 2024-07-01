@@ -81,6 +81,13 @@ const Skills = () => {
   <FontAwesomeIcon icon={faSass} size="4x" style={{ color: '#FFB6C1' }} />
   <p>Sass</p>
 </div>
+
+<div className="skill-icon">
+              <img src="/icons/webpack.png" alt="TypeScript" style={{ width: '60px', height: '60px' }} />
+              <p>WebPack</p>
+            </div>
+
+
           </div>
         </div>
 
@@ -139,14 +146,9 @@ const Skills = () => {
             </div>
 
             <div className="skill-icon">
-              <FontAwesomeIcon icon={faBitcoin} size="4x" style={{ color: '#F7931A' }} />
-              <p>Bitcoin</p>
-            </div> 
-
-            <div className="skill-icon">
-              <FontAwesomeIcon icon={faEthereum} size="4x" style={{ color: '#3C3C3D' }} />
-              <p>Ethereum</p>
-            </div> 
+              <img src="/icons/sequelize.png" alt="TypeScript" style={{ width: '64px', height: '64px' }} />
+              <p>Sequelize</p>
+            </div>
 
 
             <div className="skill-icon">
@@ -227,6 +229,21 @@ const Skills = () => {
             <div className="skill-icon">
               <img src="/icons/ansible.png" alt="TypeScript" style={{ width: '64px', height: '64px' }} />
               <p>Ansible</p>
+            </div>
+
+            <div className="skill-icon">
+              <img src="/icons/terraform.png" alt="TypeScript" style={{ width: '64px', height: '64px' }} />
+              <p>Terraform</p>
+            </div>
+
+            <div className="skill-icon">
+              <img src="/icons/promethus.png" alt="TypeScript" style={{ width: '64px', height: '64px' }} />
+              <p>Promethus</p>
+            </div>
+
+            <div className="skill-icon">
+              <img src="/icons/grafana.png" alt="TypeScript" style={{ width: '64px', height: '64px' }} />
+              <p>Grafana</p>
             </div>
 
             
