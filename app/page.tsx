@@ -2,6 +2,7 @@
 import dynamic from 'next/dynamic';
 import { Suspense } from 'react';
 import Skills from './Components/Skills';
+import Skills2 from './Components/Skills2';
 import Projects from './Components/Projects';
 import Education from './Components/Education';
 import Contact from './Components/Contact';
@@ -17,6 +18,7 @@ export default function Home() {
       <Suspense fallback={<div>Loading...</div>}>
         <MainClientComponent />
         <Skills />
+        <Skills2 />
         <Projects />
         <Education />
         <Contact />
