@@ -1,6 +1,14 @@
 // Projects.tsx
 const projectsData = [
-   
+  {
+    "name": "Mujjus Supply Chain DApp",
+    "description": "At Mujjus Supply Chain DApp, we leverage blockchain technology to provide a transparent and secure supply chain management system. Track products from the manufacturer to the end consumer with ease and reliability.",
+    "tech": ["React Js", "Web3.js", "Solidity", "Node.js", "Express.js", "Truffle", "Alchemy", "Ethereum (Holesky Testnet)"],
+    "image": "/images/SupplyChain.png", // Replace with the actual image path
+    "liveUrl": "https://decentralizedspl.onrender.com/", // Replace with the actual Render URL once deployed
+    "codeUrl": "https://github.com/mujju834/DecentralizedSPL" // Replace with the actual GitHub repo
+  },
+  
   {
     name: 'Mujjus Ecommerce store',
     description: 'At MERN Store, we pride ourselves on offering an exceptional online shopping experience, bringing you a wide range of high-quality products right to your doorstep. Whether youre looking for the latest electronics, trendy fashion, or everyday essentials, we have something for everyone.',
