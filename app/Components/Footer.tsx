@@ -8,10 +8,15 @@ const Footer = () => {
 
   useEffect(() => {
     const fetchVisitorCount = async () => {
+      const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL;
+      
+      if (!backendUrl) {
+        console.error('Backend URL is not defined');
+        return;
+      }
+
       try {
-        const response = await axios.get(process.env.NEXT_PUBLIC_BACKEND_URL); // Use the environment variable
-        console.log(process.env.NEXT_PUBLIC_BACKEND_URL);
-        
+        const response = await axios.get(backendUrl); // Use the environment variable
         setVisitorCount(response.data.count);
       } catch (error) {
         console.error('Error fetching visitor count:', error);
