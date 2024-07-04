@@ -1,11 +1,33 @@
+import { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faLinkedinIn, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import axios from 'axios';
 
 const Footer = () => {
+  const [visitorCount, setVisitorCount] = useState(0);
+
+  useEffect(() => {
+    const fetchVisitorCount = async () => {
+      try {
+        const response = await axios.get(process.env.NEXT_PUBLIC_BACKEND_URL); // Use the environment variable
+        console.log(process.env.NEXT_PUBLIC_BACKEND_URL);
+        
+        setVisitorCount(response.data.count);
+      } catch (error) {
+        console.error('Error fetching visitor count:', error);
+      }
+    };
+
+    fetchVisitorCount();
+  }, []);
+
   return (
     <footer className="bg-gray-800 text-white p-6">
       <div className="container mx-auto text-center">
         <div className="mb-4">
+          <p className="text-lg font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 animate-pulse">
+            Number of Visitors: {visitorCount}
+          </p>
           <h2 className="text-2xl font-bold">Mohammad Mujahid</h2>
           <nav className="flex justify-center my-4">
             <a href="#about" className="mx-2">About</a>
@@ -26,8 +48,7 @@ const Footer = () => {
             {/* Add more social media icons here */}
           </div>
         </div>
-        <p className="text-sm">&copy;2024 Mohammad Mujahid. All rights reserved.&apos;</p>
-
+        <p className="text-sm">&copy;2024 Mohammad Mujahid. All rights reserved.</p>
       </div>
     </footer>
   );

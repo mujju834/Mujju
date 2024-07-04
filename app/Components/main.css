@@ -22,4 +22,25 @@
       text-align: center; /* Center align the text */
     }
   }
+
+
+  .text-gradient {
+    background: linear-gradient(90deg, #ff8a00, #e52e71);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .animate-glow {
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 5px #ff8a00, 0 0 10px #ff8a00, 0 0 15px #ff8a00, 0 0 20px #ff8a00, 0 0 25px #ff8a00;
+    }
+    to {
+      text-shadow: 0 0 20px #e52e71, 0 0 30px #e52e71, 0 0 40px #e52e71, 0 0 50px #e52e71, 0 0 60px #e52e71;
+    }
+  }
+  
   
