@@ -1,9 +1,18 @@
 import { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faLinkedinIn, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import axios from 'axios';
 
 const Footer = () => {
   const [visitorCount, setVisitorCount] = useState(0);
+
+  const getWebSocketUrl = (url: string): string => {
+    if (url.startsWith('https')) {
+      return url.replace(/^https/, 'wss');
+    } else {
+      return url.replace(/^http/, 'ws');
+    }
+  };
 
   useEffect(() => {
     const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL;
@@ -13,7 +22,23 @@ const Footer = () => {
       return;
     }
 
-    const ws = new WebSocket(backendUrl.replace(/^http/, 'ws'));
+    // Fetch initial visitor count using axios
+    const fetchVisitorCount = async () => {
+      try {
+        const response = await axios.get(backendUrl);
+        setVisitorCount(response.data.count);
+      } catch (error) {
+        console.error('Error fetching visitor count:', error);
+      }
+    };
+
+    fetchVisitorCount();
+
+    // Set up WebSocket connection for real-time updates
+    const wsUrl = getWebSocketUrl(backendUrl);
+    console.log('Attempting to connect to WebSocket:', wsUrl);
+
+    const ws = new WebSocket(wsUrl);
 
     ws.onopen = () => {
       console.log('Connected to WebSocket server');
