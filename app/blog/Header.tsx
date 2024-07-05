@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Head from 'next/head';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBriefcase } from '@fortawesome/free-solid-svg-icons';
+import { ClipLoader } from 'react-spinners';
 
 type Blog = {
   title: string;
@@ -12,15 +13,16 @@ type Blog = {
 };
 
 const devopsBlogs: Blog[] = [
-  {
-    title: 'DevOps for Beginners',
-    description: 'A guide to understanding the basics of DevOps and its importance in modern software development.',
-    date: 'March 1, 2024',
-    image: '/images/fau.png',
-    filePath: './blogs/devops-beginners.docx', // Use relative path to the document
-  },
-  // ... Add other DevOps blogs here
-];
+    {
+      title: 'Automating Image Processing with AWS Lambda and S3: A Detailed Guide',
+      description: 'This comprehensive guide walks you through setting up an automated image processing pipeline using AWS Lambda and S3, including troubleshooting common issues.',
+      date: 'July 5, 2024',
+      image: '/images/Devops-1.png', // Adjust the image path as needed
+      filePath: './blogs/devops-beginners.docx', // Use relative path to the document
+    },
+    // ... Add other DevOps blogs here
+  ];
+  
 
 const cloudBlogs: Blog[] = [
   {
@@ -28,7 +30,7 @@ const cloudBlogs: Blog[] = [
     description: 'An introduction to cloud computing and its benefits for businesses of all sizes.',
     date: 'April 10, 2024',
     image: '/images/fau.png',
-    filePath: '/path/to/your/word/document.docx', // Use relative path to the document
+    filePath: './blogs/cloud-computing-basics.docx', // Use relative path to the document
   },
   // ... Add other Cloud blogs here
 ];
@@ -46,9 +48,9 @@ const Header = () => {
       const data = await response.json();
       setDocContent(data.html);
       setIsReading(true); // Show the document content
-      setIsLoading(false); // Stop loading
     } catch (error) {
       console.error('Error fetching document contents:', error);
+    } finally {
       setIsLoading(false); // Stop loading
     }
   };
@@ -152,7 +154,7 @@ const Header = () => {
                 </button>
                 {isLoading ? (
                   <div className="flex justify-center items-center h-96">
-                    <div className="spinner"></div>
+                    <ClipLoader color="#ffffff" loading={isLoading} size={50} />
                   </div>
                 ) : (
                   <div className="bg-gray-800 rounded-lg shadow-lg p-6">
@@ -171,24 +173,6 @@ const Header = () => {
           height: 100%;
           margin: 0;
           background-color: #1a202c; /* Use a darker background color */
-        }
-
-        .spinner {
-          border: 8px solid rgba(255, 255, 255, 0.1);
-          border-left-color: #ffffff;
-          border-radius: 50%;
-          width: 64px;
-          height: 64px;
-          animation: spin 1s linear infinite;
-        }
-
-        @keyframes spin {
-          0% {
-            transform: rotate(0deg);
-          }
-          100% {
-            transform: rotate(360deg);
-          }
         }
 
         .h-96 {
