@@ -158,7 +158,6 @@ const Header = () => {
                   </div>
                 ) : (
                   <div className="bg-gray-800 rounded-lg shadow-lg p-6">
-                    <h2 className="text-2xl font-bold mb-4">Document Content</h2>
                     <div dangerouslySetInnerHTML={{ __html: docContent }} />
                   </div>
                 )}
