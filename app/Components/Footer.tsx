@@ -1,29 +1,40 @@
 import { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faLinkedinIn, faInstagram } from '@fortawesome/free-brands-svg-icons';
-import axios from 'axios';
 
 const Footer = () => {
   const [visitorCount, setVisitorCount] = useState(0);
 
   useEffect(() => {
-    const fetchVisitorCount = async () => {
-      const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL;
-      
-      if (!backendUrl) {
-        console.error('Backend URL is not defined');
-        return;
-      }
+    const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL;
 
-      try {
-        const response = await axios.get(backendUrl); // Use the environment variable
-        setVisitorCount(response.data.count);
-      } catch (error) {
-        console.error('Error fetching visitor count:', error);
-      }
+    if (!backendUrl) {
+      console.error('Backend URL is not defined');
+      return;
+    }
+
+    const ws = new WebSocket(backendUrl.replace(/^http/, 'ws'));
+
+    ws.onopen = () => {
+      console.log('Connected to WebSocket server');
     };
 
-    fetchVisitorCount();
+    ws.onmessage = (event) => {
+      const data = JSON.parse(event.data);
+      setVisitorCount(data.count);
+    };
+
+    ws.onerror = (error) => {
+      console.error('WebSocket error:', error);
+    };
+
+    ws.onclose = () => {
+      console.log('Disconnected from WebSocket server');
+    };
+
+    return () => {
+      ws.close();
+    };
   }, []);
 
   return (
