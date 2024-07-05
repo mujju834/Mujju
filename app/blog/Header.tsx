@@ -48,7 +48,7 @@ const Header = () => {
       setIsReading(true); // Show the document content
       setIsLoading(false); // Stop loading
     } catch (error) {
-      console.error('Error fetching document content:', error);
+      console.error('Error fetching document contents:', error);
       setIsLoading(false); // Stop loading
     }
   };
