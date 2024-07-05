@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { useState, useEffect, useMemo } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBriefcase,faBars,faTimes } from '@fortawesome/free-solid-svg-icons';
-
+import Link from 'next/link';
 
 const Main = () => {
   const titles = useMemo(() => ['Blockchain Developer', 'Full Stack Maestro', 'Cloud Architect', 'DevOps Specialist', 'Networking Enthusiast'], []);
@@ -121,7 +121,9 @@ const Main = () => {
                     <ul className="flex flex-col md:flex-row justify-end space-x-0 md:space-x-3 items-center md:items-center">
                         <li><a href="#about-section" className="scroll-target nav-item text-white hover:text-gray-300 px-1 md:px-4 relative">About</a></li>
                         <li><a href="#skills" className="scroll-target nav-item text-white hover:text-gray-300 px-1 md:px-4 relative">Skills</a></li>
+                        <li><a href="#experience" className="scroll-target nav-item text-white hover:text-gray-300 px-1 md:px-4 relative">Professional experience</a></li>
                         <li><a href="#projects" className="scroll-target nav-item text-white hover:text-gray-300 px-1 md:px-4 relative">Projects</a></li>
+                        <li><a href="/blog" className="nav-item text-white hover:text-gray-300 px-1 md:px-4 relative">My-Blogs-on-Tech</a></li>
                         <li><a href="#education" className="scroll-target nav-item text-white hover:text-gray-300 px-1 md:px-4 relative">Education</a></li>
                         <li><a href="#contact" className="scroll-target nav-item text-white hover:text-gray-300 px-1 md:px-4 relative">Contact</a></li>
                     </ul>

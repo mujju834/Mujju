@@ -8,6 +8,7 @@ import Education from './Components/Education';
 import Contact from './Components/Contact';
 import Footer from './Components/Footer';
 import Experience from './Components/experience';
+import Link from 'next/link';
 
 const MainClientComponent = dynamic(() => import('./Components/Main.client'), {
   suspense: true,
@@ -26,6 +27,7 @@ export default function Home() {
         <Contact />
         <Footer />
       </Suspense>
+
     </div>
   );
 }
