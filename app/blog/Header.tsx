@@ -20,6 +20,13 @@ const devopsBlogs: Blog[] = [
       image: '/images/Devops-1.png', // Adjust the image path as needed
       filePath: './blogs/devops-beginners.docx', // Use relative path to the document
     },
+    {
+      title: 'Setting Up a Multi-Tier Architecture on AWS: A Step-by-Step Guide',
+      description: 'This detailed guide covers the process of setting up a multi-tier architecture on AWS, including configuring subnets, route tables, security groups, launching EC2 instances, and connecting to an RDS MySQL database.',
+      date: 'July 8, 2024',
+      image: '/images/Multi-tier.png', // Adjust the image path as needed
+      filePath: './blogs/Multi-Tier-Application.docx', // Use relative path to the document
+    }
     // ... Add other DevOps blogs here
   ];
   
