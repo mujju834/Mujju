@@ -4,7 +4,7 @@ import { faTwitter, faLinkedinIn, faInstagram } from '@fortawesome/free-brands-s
 import axios from 'axios';
 
 const Footer = () => {
-  const [visitorCount, setVisitorCount] = useState(0);
+  const [visitorCount, setVisitorCount] = useState<number | null>(null);
 
   const getWebSocketUrl = (url: string): string => {
     if (url.startsWith('https')) {
@@ -25,7 +25,7 @@ const Footer = () => {
     // Fetch initial visitor count using axios
     const fetchVisitorCount = async () => {
       try {
-        const response = await axios.get(backendUrl);
+        const response = await axios.get(`${backendUrl}/visitor-count`);
         setVisitorCount(response.data.count);
       } catch (error) {
         console.error('Error fetching visitor count:', error);
@@ -55,6 +55,9 @@ const Footer = () => {
 
     ws.onclose = () => {
       console.log('Disconnected from WebSocket server');
+      // Fallback to periodic HTTP fetch if WebSocket disconnects
+      const intervalId = setInterval(fetchVisitorCount, 10000);
+      return () => clearInterval(intervalId);
     };
 
     return () => {
@@ -67,7 +70,7 @@ const Footer = () => {
       <div className="container mx-auto text-center">
         <div className="mb-4">
           <p className="text-lg font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 animate-pulse">
-            Number of Visitors: {visitorCount}
+            Number of Visitors: {visitorCount !== null ? visitorCount : 'Loading...'}
           </p>
           <h2 className="text-2xl font-bold">Mohammad Mujahid</h2>
           <nav className="flex justify-center my-4">
