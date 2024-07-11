@@ -67,7 +67,7 @@ const Footer = () => {
       <div className="container mx-auto text-center">
         <div className="mb-4">
           <p className="text-lg font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 animate-pulse">
-          Number of Visitors: {visitorCount !== null ? visitorCount : 'Loading...'}
+          Number of Visitors: {visitorCount !== 0 ? visitorCount : 'Loading...'}
           </p>
           <h2 className="text-2xl font-bold">Mohammad Mujahid</h2>
           <nav className="flex justify-center my-4">
