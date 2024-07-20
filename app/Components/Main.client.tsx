@@ -141,7 +141,7 @@ const Main = () => {
           <div className="flex flex-col md:flex-row items-center">
           <div className="relative w-96 h-96 rounded-full overflow-hidden border-4 border-purple-600">
   <Image
-    src="/images/My-img.png" 
+    src="/images/My-img.jpeg" 
     alt="Profile Picture"
     layout="fill"
     objectFit="cover"
