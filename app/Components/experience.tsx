@@ -55,7 +55,7 @@ const Experience = () => {
         id: 1,
         company: 'Freelance Blockchain Developer on Fiverr, Remote',
         role: 'Blockchain Developer',
-        date: '2018 – 2022',
+        date: '2018 – 2024',
         description: 'Specialized in designing and implementing secure and efficient blockchain-based solutions for a diverse range of international clients. Developed smart contracts, decentralized applications (dApps), and contributed to blockchain protocol developments.',
         imageUrl: '/images/fiverr.png', // Placeholder - Replace with actual image path
         contributions: [
