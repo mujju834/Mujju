@@ -49,7 +49,7 @@ const Experience = () => {
         achievements: [
           'Enhanced system reliability and scalability, leading to a significant reduction in downtime and operational costs.'
         ],
-        technologies: 'Terraform, Ansible, Prometheus, Grafana, Docker, Kubernetes, AWS, Git, Jenkins'
+        technologies: 'Terraform, Ansible, Prometheus, Grafana, Docker, Kubernetes, AWS, Azure, GCP,Git, Jenkins'
       },
       {
         id: 1,
