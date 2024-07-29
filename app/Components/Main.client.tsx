@@ -160,7 +160,7 @@ const Main = () => {
               As a full-stack maestro, I blend front-end elegance with robust back-end functionalities, creating cohesive and dynamic applications. My blockchain expertise fortifies platforms with decentralization, infusing trust and security into every transaction. In the DevOps arena, I streamline workflows, ensuring seamless integration and deployment that accelerate the software development lifecycle. My ventures in cloud computing architect scalable solutions, harnessing distributed power for peak performance. Through a deep understanding of networking, I construct infrastructures that are both resilient and efficient. Each layer of technology is a strategic move in my quest to redefine the digital landscape of businesses.
               </p>
      
-              <a href="/Resume/Mujju-Resume.pdf" download="Mohammad-Mujahid_Resume.pdf" className="mt-8 inline-block bg-purple-500 hover:bg-purple-600 text-white font-bold py-3 px-6 rounded-full transition-colors duration-300">My Resume</a>
+              <a href="/Resume/Mujju--Resume.pdf" download="Mohammad-Mujahid_Resume.pdf" className="mt-8 inline-block bg-purple-500 hover:bg-purple-600 text-white font-bold py-3 px-6 rounded-full transition-colors duration-300">My Resume</a>
             </div>
           </div>
 
