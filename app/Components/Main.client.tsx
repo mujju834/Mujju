@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { useState, useEffect, useMemo } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBriefcase,faBars,faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faBriefcase,faBars,faTimes,faLink, faExternalLinkAlt  } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
 
 const Main = () => {
@@ -157,10 +157,23 @@ const Main = () => {
               </p>
               <p className="mt-4 max-w-2xl">
                 
-              As a full-stack maestro, I blend front-end elegance with robust back-end functionalities, creating cohesive and dynamic applications. My blockchain expertise fortifies platforms with decentralization, infusing trust and security into every transaction. In the DevOps arena, I streamline workflows, ensuring seamless integration and deployment that accelerate the software development lifecycle. My ventures in cloud computing architect scalable solutions, harnessing distributed power for peak performance. Through a deep understanding of networking, I construct infrastructures that are both resilient and efficient. Each layer of technology is a strategic move in my quest to redefine the digital landscape of businesses.
-              </p>
+              As a full-stack maestro, I blend front-end elegance with robust back-end functionalities, creating cohesive and 
+              dynamic applications. My blockchain expertise fortifies platforms with decentralization, infusing trust and 
+              security into every transaction. In the DevOps arena, I streamline workflows, ensuring seamless integration 
+              and deployment that accelerate the software development lifecycle. My ventures in cloud computing architect 
+              scalable solutions, harnessing distributed power for peak performance. Through a deep understanding of networking,
+               I construct infrastructures that are both resilient and efficient. Each layer of technology is a strategic 
+               move in my quest to redefine the digital landscape of businesses.
+               <br />
+               <span className="font-bold">
+  My-Company: <a href="https://mastnov-tech.vercel.app/" target="_blank" className="text-blue-500 hover:underline">
+    Visit our site <FontAwesomeIcon icon={faExternalLinkAlt} className="text-blue-500" />
+  </a>
+</span>
+
+  </p>
      
-              <a href="/Resume/Mujju--Resume.pdf" download="Mohammad-Mujahid_Resume.pdf" className="mt-8 inline-block bg-purple-500 hover:bg-purple-600 text-white font-bold py-3 px-6 rounded-full transition-colors duration-300">My Resume</a>
+              <a href="/Resume/Mujju--Resume.pdf" download="Mohammad-Mujahid_Resume.pdf" className="mt-5 inline-block bg-purple-500 hover:bg-purple-600 text-white font-bold py-3 px-6 rounded-full transition-colors duration-300">My Resume</a>
             </div>
           </div>
 
