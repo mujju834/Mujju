@@ -4,7 +4,7 @@ const projectsData = [
     "name": "Mujjus Chess AI",
     "description": "Mujjus Chess AI offers an engaging and interactive chess experience featuring multiple play modes including Human vs Human, Human vs AI, and AI vs AI. The game leverages the Min-Max algorithm to provide a challenging AI opponent.",
     "downloadNote": "To download Mujjus Chess AI, click the link Live-Project. It will take you to google drive. The game is supported on Windows operating systems. Simply download the executable, run it, and enjoy the game!",
-    "tech": ["Python", "Pygame","PyInstaller" "Min-Max Algorithm"],
+    "tech": ["Python", "Pygame","PyInstaller", "Min-Max Algorithm"],
     "image": "/images/ChessAI.png", // Replace with the actual image path
     "liveUrl": "https://drive.google.com/file/d/1dIpNxgUUF7AIM9PrE6TnCHW4jmRu5rye/view?usp=sharing", // Replace with the actual Google Drive link
     "codeUrl": "https://github.com/mujju834/Mujjus-chess-AI" // Replace with the actual GitHub repo
