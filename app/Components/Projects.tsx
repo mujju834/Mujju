@@ -1,6 +1,16 @@
 // Projects.tsx
 const projectsData = [
   {
+    "name": "Mujjus Chess AI",
+    "description": "Mujjus Chess AI offers an engaging and interactive chess experience featuring multiple play modes including Human vs Human, Human vs AI, and AI vs AI. The game leverages the Min-Max algorithm to provide a challenging AI opponent.",
+    "downloadNote": "To download Mujjus Chess AI, click the link Live-Project. It will take you to google drive. The game is supported on Windows operating systems. Simply download the executable, run it, and enjoy the game!",
+    "tech": ["Python", "Pygame", "Min-Max Algorithm"],
+    "image": "/images/ChessAI.png", // Replace with the actual image path
+    "liveUrl": "https://drive.google.com/file/d/1dIpNxgUUF7AIM9PrE6TnCHW4jmRu5rye/view?usp=sharing", // Replace with the actual Google Drive link
+    "codeUrl": "https://github.com/mujju834/Mujjus-chess-AI" // Replace with the actual GitHub repo
+},
+
+  {
     "name": "Mujjus Supply Chain DApp",
     "description": "At Mujjus Supply Chain DApp, we leverage blockchain technology to provide a transparent and secure supply chain management system. Track products from the manufacturer to the end consumer with ease and reliability.",
     "tech": ["React Js", "Web3.js", "Solidity", "Node.js", "Express.js", "Truffle", "Alchemy", "Ethereum (Holesky Testnet)"],
@@ -66,6 +76,8 @@ const projectsData = [
                 <img src={project.image} alt={project.name} className="rounded-lg mb-4" />
                 <h3 className="text-2xl font-bold mb-3">{project.name}</h3>
                 <p className="mb-4">{project.description}</p>
+                <p className="mb-4 text-blue-500">{project.downloadNote}</p>
+
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tech.map((tech, index) => (
                     <span key={index} className="bg-purple-700 text-sm rounded px-2 py-1">
