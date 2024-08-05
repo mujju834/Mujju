@@ -11,6 +11,8 @@ const Main = () => {
   const [fade, setFade] = useState(true);
   const [isOpen, setIsOpen] = useState(false);
 
+    const closeMenu = () => setIsOpen(false);
+
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -75,48 +77,21 @@ const Main = () => {
       </Head>
 
 
- {/* previous navbar */}
-      {/* <header className="fixed top-0 w-full z-30 bg-gray-900 text-white p-8">
-  <div className="container mx-auto flex justify-between items-center">
-    <div className="flex items-center space-x-2">
-      <FontAwesomeIcon icon={faBriefcase} className="text-white" />
-      <a href="#about-section" className="text-white font-bold">Portfolio</a>
-    </div>
-    <nav className="flex-4">
-      <ul className="flex justify-end space-x-2 md:space-x-3"> 
-        <li>
-        <a href="#about-section" className="scroll-target nav-item text-white hover:text-gray-300 px-1 md:px-4 relative">
-        About
-      </a>
-        </li>
-        <li><a href="#skills" className="scroll-target nav-item text-white hover:text-gray-300 px-1 md:px-4 relative">Skills</a></li>
-        <li><a href="#projects" className="scroll-target nav-item text-white hover:text-gray-300 px-1 md:px-4 relative">Projects</a></li>
-        <li><a href="#education" className="scroll-target nav-item text-white hover:text-gray-300 px-1 md:px-4 relative">Education</a></li>
-        <li><a href="#contact" className="scroll-target nav-item text-white hover:text-gray-300 px-1 md:px-4 relative">Contact</a></li>
-      </ul>
-    </nav>
-    <div>
-      <a href="https://github.com/mujju834" className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded">GitHub Profile</a>
-    </div>
-  </div>
-</header> */}
-
 {/* new navbar with mobile response */}
- <header className="fixed top-0 w-full z-30 bg-gray-900 text-white p-8">
+ {/* <header className="fixed top-0 w-full z-30 bg-gray-900 text-white p-8">
             <div className="container mx-auto flex justify-between items-center">
                 <div className="flex items-center space-x-2">
                     <FontAwesomeIcon icon={faBriefcase} className="text-white" />
                     <a href="#about-section" className="text-white font-bold">Portfolio</a>
                 </div>
 
-                {/* Hamburger Icon */}
+              
                 <div className="md:hidden">
                     <button onClick={toggleMenu} className="text-white focus:outline-none">
                         <FontAwesomeIcon icon={isOpen ? faTimes : faBars} />
                     </button>
                 </div>
 
-                {/* Navigation */}
                 <nav className={`${isOpen ? 'block' : 'hidden'} md:block`}>
                     <ul className="flex flex-col md:flex-row justify-end space-x-0 md:space-x-3 items-center md:items-center">
                         <li><a href="#about-section" className="scroll-target nav-item text-white hover:text-gray-300 px-1 md:px-4 relative">About</a></li>
@@ -133,7 +108,47 @@ const Main = () => {
                     <a href="https://github.com/mujju834" className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded">GitHub Profile</a>
                 </div>
             </div>
-        </header>
+        </header> */}
+
+
+             {/* new navbar with mobile responsiveness */}
+             <header className="fixed top-0 w-full z-30 bg-gray-900 text-white p-8">
+    <div className="container mx-auto flex justify-between items-center">
+        <div className="flex items-center space-x-2">
+            <FontAwesomeIcon icon={faBriefcase} className="text-white" />
+            <a href="#about-section" className="scroll-target text-white font-bold">Portfolio</a>
+        </div>
+
+        <div className="md:hidden">
+            <button onClick={toggleMenu} className="text-white focus:outline-none">
+                <FontAwesomeIcon icon={isOpen ? faTimes : faBars} />
+            </button>
+        </div>
+
+        <nav className={`fixed inset-0 flex flex-col items-center justify-center transform ${isOpen ? 'translate-y-0' : '-translate-y-full'} transition-transform duration-300 ease-linear z-50 md:relative md:transform-none md:transition-none bg-gray-900 md:bg-transparent p-8 md:p-0 md:block`}>
+            <ul className="space-y-6 md:space-y-0 md:flex md:space-x-6 items-center justify-center w-full h-full md:h-auto">
+                <li className="md:hidden w-full text-right">
+                    <button onClick={toggleMenu} className="text-white focus:outline-none">
+                        <FontAwesomeIcon icon={faTimes} />
+                    </button>
+                </li>
+                <li><a href="#about-section" className="scroll-target nav-item text-white hover:text-gray-300 px-1 md:px-4 relative" onClick={closeMenu}>About</a></li>
+                <li><a href="#skills" className="scroll-target nav-item text-white hover:text-gray-300 px-1 md:px-4 relative" onClick={closeMenu}>Skills</a></li>
+                <li><a href="#experience" className="scroll-target nav-item text-white hover:text-gray-300 px-1 md:px-4 relative" onClick={closeMenu}>Professional experience</a></li>
+                <li><a href="#projects" className="scroll-target nav-item text-white hover:text-gray-300 px-1 md:px-4 relative" onClick={closeMenu}>Projects</a></li>
+                <li><a href="/blog" className="nav-item text-white hover:text-gray-300 px-1 md:px-4 relative" onClick={closeMenu}>My-Blogs-on-Tech</a></li>
+                <li><a href="#education" className="scroll-target nav-item text-white hover:text-gray-300 px-1 md:px-4 relative" onClick={closeMenu}>Education</a></li>
+                <li><a href="#contact" className="scroll-target nav-item text-white hover:text-gray-300 px-1 md:px-4 relative" onClick={closeMenu}>Contact</a></li>
+                <li><a href="https://github.com/mujju834" className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded md:mt-0 mt-4">GitHub Profile</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+
+
+
 
 
       <main className="pt-24 bg-gray-900 text-white">
