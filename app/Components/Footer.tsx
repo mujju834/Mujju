@@ -71,10 +71,10 @@ const Footer = () => {
           </p>
           <h2 className="text-2xl font-bold">Mohammad Mujahid</h2>
           <nav className="flex justify-center my-4">
-            <a href="#about" className="mx-2">About</a>
-            <a href="#skills" className="mx-2">Skills</a>
-            <a href="#projects" className="mx-2">Projects</a>
-            <a href="#education" className="mx-2">Education</a>
+            <a href="#about-section" className="scroll-target mx-2">About</a>
+            <a href="#skills" className="scroll-target mx-2">Skills</a>
+            <a href="#projects" className="scroll-target mx-2">Projects</a>
+            <a href="#education" className="scroll-target mx-2">Education</a>
           </nav>
           <div className="flex justify-center gap-4">
             <a href="https://twitter.com/mujahidmohamma4" target="_blank" rel="noopener noreferrer">
