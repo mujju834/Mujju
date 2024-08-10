@@ -181,7 +181,7 @@ const Main = () => {
                move in my quest to redefine the digital landscape of businesses.
                <br />
                <span className="font-bold">
-  My-Company: <a href="https://mastnov-tech.vercel.app/" target="_blank" className="text-blue-500 hover:underline">
+  My-Company: <a href="https://www.mastnovtech.com/" target="_blank" className="text-blue-500 hover:underline">
     Visit our site <FontAwesomeIcon icon={faExternalLinkAlt} className="text-blue-500" />
   </a>
 </span>
