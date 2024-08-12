@@ -6,7 +6,7 @@ import { faBriefcase,faBars,faTimes,faLink, faExternalLinkAlt  } from '@fortawes
 import Link from 'next/link';
 
 const Main = () => {
-  const titles = useMemo(() => ['Blockchain Developer', 'Full Stack Maestro', 'Cloud Architect', 'DevOps Specialist', 'Networking Enthusiast'], []);
+  const titles = useMemo(() => ['Entrepreneur','Blockchain Developer', 'Full Stack Maestro', 'Cloud Architect', 'DevOps Specialist', 'Networking Enthusiast'], []);
   const [currentTitle, setCurrentTitle] = useState(titles[0]);
   const [fade, setFade] = useState(true);
   const [isOpen, setIsOpen] = useState(false);
