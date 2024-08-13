@@ -180,15 +180,23 @@ const Main = () => {
                I construct infrastructures that are both resilient and efficient. Each layer of technology is a strategic 
                move in my quest to redefine the digital landscape of businesses.
                <br />
-               <span className="font-bold">
+               <i>
+
+               As an entrepreneur, I've harnessed my technical acumen to launch and lead innovative venture. 
+               These business are not just a testament to my passion for technology but also a reflection of my
+                strategic vision to redefine the digital landscape of businesses globally.
+               </i>
+                <br />
+               <span className="md:mt-5 font-bold">
   My-Company: <a href="https://www.mastnovtech.com/" target="_blank" className="text-blue-500 hover:underline">
     Visit our site <FontAwesomeIcon icon={faExternalLinkAlt} className="text-blue-500" />
   </a>
+  <a href="/Resume/Mujju--Resume.pdf" download="Mohammad-Mujahid_Resume.pdf" className="mt-4 md:mt-3 ml-5 inline-block bg-purple-500 hover:bg-purple-600 text-white font-bold py-3 px-6 rounded-full transition-colors duration-300">My Resume</a>
+
 </span>
 
   </p>
      
-              <a href="/Resume/Mujju--Resume.pdf" download="Mohammad-Mujahid_Resume.pdf" className="mt-5 inline-block bg-purple-500 hover:bg-purple-600 text-white font-bold py-3 px-6 rounded-full transition-colors duration-300">My Resume</a>
             </div>
           </div>
 
@@ -197,7 +205,7 @@ const Main = () => {
 .scroll-section::before {
   content: '';
   display: block;
-  height: 120px; 
+  height: 90px; 
   visibility: hidden;
 }
 
