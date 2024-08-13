@@ -182,7 +182,7 @@ const Main = () => {
                <br />
                <i>
 
-               As an entrepreneur, I've harnessed my technical acumen to launch and lead innovative venture. 
+               As an entrepreneur, I&aposve harnessed my technical acumen to launch and lead innovative venture. 
                These business are not just a testament to my passion for technology but also a reflection of my
                 strategic vision to redefine the digital landscape of businesses globally.
                </i>
