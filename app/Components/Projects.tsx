@@ -9,6 +9,15 @@ const projectsData = [
     "liveUrl": "https://drive.google.com/file/d/1dIpNxgUUF7AIM9PrE6TnCHW4jmRu5rye/view?usp=sharing", // Replace with the actual Google Drive link
     "codeUrl": "https://github.com/mujju834/Mujjus-chess-AI" // Replace with the actual GitHub repo
 },
+{
+  "name": "Instagram Reel Downloader",
+  "description": "The Instagram Reel Downloader allows users to download Instagram reels directly by entering the URL. It features a simple interface where users can preview the video and download it instantly.",
+  "tech": ["HTML", "CSS", "JavaScript", "Node.js", "Express", "Fetch API"],
+  "image": "/images/Insta-reel.png", 
+  "liveUrl": "https://insta-reel-downloader-dzun.onrender.com", 
+  "codeUrl": "https://github.com/mujju834/Insta-reel-downloader.git" 
+},
+
 
   {
     "name": "Mujjus Supply Chain DApp",
