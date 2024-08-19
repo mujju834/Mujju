@@ -191,7 +191,7 @@ const Main = () => {
   My-Company: <a href="https://www.mastnovtech.com/" target="_blank" className="text-blue-500 hover:underline">
     Visit our site <FontAwesomeIcon icon={faExternalLinkAlt} className="text-blue-500" />
   </a>
-  <a href="/Resume/Mujju--Resume.pdf" download="Mohammad-Mujahid_Resume.pdf" className="mt-4 md:mt-3 ml-5 inline-block bg-purple-500 hover:bg-purple-600 text-white font-bold py-3 px-6 rounded-full transition-colors duration-300">My Resume</a>
+  <a href="/Resume/Mujju-Resume.pdf" download="Mohammad-Mujahid_Resume.pdf" className="mt-4 md:mt-3 ml-5 inline-block bg-purple-500 hover:bg-purple-600 text-white font-bold py-3 px-6 rounded-full transition-colors duration-300">My Resume</a>
 
 </span>
 
