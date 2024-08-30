@@ -10,6 +10,15 @@ const projectsData = [
     "codeUrl": "https://github.com/mujju834/Mujjus-chess-AI" // Replace with the actual GitHub repo
 },
 {
+  "name": "Mujju's Ethereum Wallet",
+  "description": "Mujju's Ethereum Wallet is a user-friendly web application that allows users to securely manage their Ethereum wallets. Users can import existing wallets, view their balances, and send transactions with ease. The app ensures that users can access their wallets from any device and keeps their data secure.",
+  "tech": ["React", "TypeScript", "Node.js", "Express", "MongoDB", "Ethers.js", "Tailwind CSS"],
+  "image": "/images/Ethereum-wallet.png", // Replace with the actual image path
+  "liveUrl": "https://my-etherwaller-ui.vercel.app/", // Replace with the actual live project URL
+  "codeUrl": "https://github.com/mujju834/MyEtherwaller-Ui.git" // Replace with the actual GitHub repo
+},
+
+{
   "name": "Instagram Reel Downloader",
   "description": "The Instagram Reel Downloader allows users to download Instagram reels directly by entering the URL. It features a simple interface where users can preview the video and download it instantly.",
   "tech": ["HTML", "CSS", "JavaScript", "Node.js", "Express", "Fetch API"],
