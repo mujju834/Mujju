@@ -10,6 +10,15 @@ const projectsData = [
     "codeUrl": "https://github.com/mujju834/Mujjus-chess-AI" // Replace with the actual GitHub repo
 },
 {
+  "name": "Mujju's Search Engine",
+  "description": "Mujju's Search Engine is a fast and efficient web search application that allows users to search the web and retrieve relevant results. The application leverages modern web technologies and provides a clean, responsive user interface. Users can enter their queries and receive a list of relevant web pages with links and descriptions, similar to popular search engines.",
+  "tech": ["Node.js", "Express", "Bootstrap", "Bing Web Search API", "JavaScript", "HTML", "CSS"],
+  "image": "/images/search-engine.png", // Replace with the actual image path
+  "liveUrl": "https://mujju-search-engine.onrender.com/", // Replace with the actual live project URL
+  "codeUrl": "https://github.com/mujju834/Mujju-search-engine" // Replace with the actual GitHub repo
+},
+
+{
   "name": "Mujju's Ethereum Wallet",
   "description": "Mujju's Ethereum Wallet is a user-friendly web application that allows users to securely manage their Ethereum wallets. Users can import existing wallets, view their balances, and send transactions with ease. The app ensures that users can access their wallets from any device and keeps their data secure.",
   "tech": ["React", "TypeScript", "Node.js", "Express", "MongoDB", "Ethers.js", "Tailwind CSS"],
