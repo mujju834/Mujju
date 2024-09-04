@@ -18,7 +18,7 @@ const projectsData = [
   "codeUrl": "https://github.com/mujju834/Mujju-search-engine" // Replace with the actual GitHub repo
 },
 {
-  "name": "Mujju's WhatsApp Clone",
+  "name": "Mujju's WhatsApp ",
   "description": "Mujju's WhatsApp Clone is a real-time messaging and calling application that allows users to chat and make audio calls. Users can register with their phone numbers, send messages, and make secure peer-to-peer audio calls, just like popular messaging apps. The app leverages modern web technologies and Socket.io for real-time interactions.",
   "tech": ["Node.js", "Express", "React", "Socket.io", "SimplePeer", "MongoDB", "Bootstrap", "Twilio API", "JavaScript", "HTML", "CSS"],
   "image": "/images/Mujju-whatsapp.png", // Replace with the actual image path
