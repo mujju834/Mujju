@@ -18,6 +18,16 @@ const projectsData = [
   "codeUrl": "https://github.com/mujju834/Mujju-search-engine" // Replace with the actual GitHub repo
 },
 {
+  "name": "Mujju's Python-Code-Runner",
+  "description": "Mujju's Python-Code-Runner is an intuitive web-based application that allows users to write, execute, and visualize Python code directly in the browser. The app supports real-time code execution, provides output for text-based results, and also supports graphical plots for data visualization. It's designed for both beginners and advanced Python developers with a seamless and responsive interface.",
+  "tech": ["React", "Monaco Editor", "Flask", "Bootstrap", "Python"],
+  "image": "/images/python-code-runner.png", // Replace with the actual image path
+  "liveUrl": "https://mujjus-coderunner.onrender.com/", // Replace with the actual live project URL
+  "codeUrl": "https://github.com/mujju834/Mujjus-coderunner.git" // Replace with the actual GitHub repo
+}
+
+,
+{
   "name": "Mujju's WhatsApp ",
   "description": "Mujju's WhatsApp Clone is a real-time messaging and calling application that allows users to chat and make audio calls. Users can register with their phone numbers, send messages, and make secure peer-to-peer audio calls, just like popular messaging apps. The app leverages modern web technologies and Socket.io for real-time interactions.",
   "tech": ["Node.js", "Express", "React", "Socket.io", "SimplePeer", "MongoDB", "Bootstrap", "Twilio API", "JavaScript", "HTML", "CSS"],
