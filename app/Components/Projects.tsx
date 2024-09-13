@@ -24,7 +24,16 @@ const projectsData = [
   "image": "/images/python-code-runner.png", // Replace with the actual image path
   "liveUrl": "https://mujjus-coderunner.onrender.com/", // Replace with the actual live project URL
   "codeUrl": "https://github.com/mujju834/Mujjus-coderunner.git" // Replace with the actual GitHub repo
+},
+{
+  "name": "Mujju's QR Code Generator",
+  "description": "Mujju's QR Code Generator is an advanced client-server web application that facilitates seamless generation of QR codes based on dynamic input data. The application features real-time processing of user inputs, including validation of URLs, and asynchronous rendering of graphical output. It's designed with a focus on efficient state management and UI responsiveness, ensuring a smooth experience for users on all devices.",
+  "tech": ["Server-rendered React Components", "Custom CSS Framework (Tailwind)", "Asynchronous Graphics Rendering Engine", "Data Encoding Algorithms (QR)", "JavaScript ES Modules", "Client-Side Data Validation"],
+  "image": "/images/qr-code-generator.png", // Replace with the actual image path
+  "liveUrl": "https://mujjus-qrcode.netlify.app/", // Replace with the actual live project URL
+  "codeUrl": "https://github.com/mujju834/Mujjus-Qr-code-generator" // Replace with the actual GitHub repo
 }
+
 
 ,
 {
