@@ -39,6 +39,27 @@ const projectsData = [
   "liveUrl": "https://credit-front-three.vercel.app", // Replace with the actual live project URL
   "codeUrl": "https://mujjuscredit-back.onrender.com/conf" // Replace with the actual GitHub repo
 },
+{
+  "name": "Mujju's YouTube Video Downloader",
+  "description": "Mujju's YouTube Video Downloader is a simple, user-friendly web application that allows users to enter a YouTube video link and download it in various formats. The application supports downloading different video qualities and audio formats, providing flexibility for users to choose their preferred format. All video processing happens securely, and no personal data is stored. With a sleek interface and fast download processing, users can easily manage their video downloads.",
+  "tech": [
+    "Remix Framework (Server-Side Rendering and Static Site Generation)",
+    "Node.js (Event-driven, Non-blocking I/O model)",
+    "Express.js (Unopinionated Web Application Framework)",
+    "yt-dlp (YouTube Video Downloading Backend)",
+    "Tailwind CSS (Utility-first CSS Framework for Rapid UI Development)",
+    "JavaScript (ES6+ with Asynchronous Programming)",
+    "HTML5 (Semantic Markup for Modern Web Applications)",
+    "CSS3 (Advanced Styling with Flexbox and Grid)",
+    "RESTful API (Stateless Architectural Style)",
+    "Asynchronous JavaScript (AJAX and Promises for Non-blocking Operations)",
+    "Docker (Containerization for Scalable Deployment)"
+  ],
+  "image": "/images/youtube-video-downloader.png", // Replace with the actual image path
+  "liveUrl": "https://youtube-ui-chi.vercel.app", // Replace with the actual live project URL
+  "codeUrl": "https://github.com/mujju834/youtube-ui" // Replace with the actual GitHub repo
+},
+
 
 {
   "name": "Mujju's Python-Code-Runner",
